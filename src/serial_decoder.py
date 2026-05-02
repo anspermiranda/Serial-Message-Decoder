@@ -14,7 +14,7 @@ for i in range(0xA0, 0xE0):  # Range between 0xA0 to 0xDF
 input_file = open(r"C:\Users\anspe\Downloads\binaryFileC_84.bin", "rb")
 
 # Open the CSV output file (write)
-output_file = open("14320246.csv", "w")
+output_file = open("output_file.csv", "w")
 
 # Decoder State Variables
 frame_buffer = []  # Temporarily holds the bytes for a single frame.
