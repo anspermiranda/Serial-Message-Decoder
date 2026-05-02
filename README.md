@@ -42,13 +42,11 @@ Each data frame consists of 26 bytes:
 Serial-Message-Decoder/
 │
 ├── src/
-│   └── decoder.py          # Main decoding script
+│   └── serial_decoder.py   # Main decoding script
 │
 ├── data/
-│   └── sample_output.csv   # Example decoded output
-│
-├── docs/
-│   └── coursework.pdf      # Coursework description (optional)
+│   └── input_file.bin      # Example encoded input file
+│   └── output_file.csv     # Example decoded output file
 │
 └── README.md
 ```
@@ -60,8 +58,8 @@ Serial-Message-Decoder/
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/yourusername/serial-message-decoder.git
-cd serial-message-decoder
+git clone https://github.com/anspermiranda/Serial-Message-Decoder.git
+cd Serial-Message-Decoder
 ```
 
 ---
@@ -73,18 +71,18 @@ Place your `.bin` file inside the project directory.
 Example:
 
 ```
-data/binary_input.bin
+Serial-Message-Decoder/data/binary_input_fie.bin
 ```
 
 ---
 
 ### 3. Update file path in the script
 
-Open `src/decoder.py` and update:
+Open `Serial-Message-Decoder/src/serial_decoder.py` and update:
 
 ```python
-input_file = open("data/binary_input.bin", "rb")
-output_file = open("data/output.csv", "w")
+input_file = open("Serial-Message-Decoder/data/binary_input_file.bin", "rb")
+output_file = open("Serial-Message-Decoder/data/output_file.csv", "w")
 ```
 
 ---
@@ -92,7 +90,7 @@ output_file = open("data/output.csv", "w")
 ### 4. Run the script
 
 ```
-python src/decoder.py
+python src/serial_decoder.py
 ```
 
 ---
@@ -102,7 +100,7 @@ python src/decoder.py
 After execution, a CSV file will be generated:
 
 ```
-data/output.csv
+data/output_file.csv
 ```
 
 Each row represents one decoded data frame.
