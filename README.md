@@ -45,7 +45,7 @@ Serial-Message-Decoder/
 │   └── serial_decoder.py   # Main decoding script
 │
 ├── data/
-│   └── input_file.bin      # Example encoded input file
+│   └── binary_input_file.bin      # Example encoded input file
 │   └── output_file.csv     # Example decoded output file
 │
 └── README.md
