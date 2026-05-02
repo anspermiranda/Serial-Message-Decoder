@@ -11,10 +11,10 @@ for i in range(0xA0, 0xE0):  # Range between 0xA0 to 0xDF
 
 
 # Open the binary input file (read)
-input_file = open(r"input_file.bin", "rb") # Note : Give the correct file name with path (Example: C:\Users\anspe\Downloads\input_file.bin)
+input_file = open("Serial-Message-Decoder/data/binary_input_file.bin", "rb") # Note : Give the correct file name with path (Example: C:\Users\anspe\Downloads\input_file.bin)
 
 # Open the CSV output file (write)
-output_file = open("output_file.csv", "w") # Note : Given the correct file name and path where you want to save it
+output_file = open("Serial-Message-Decoder/data/output_file.csv", "w") # Note : Given the correct file name and path where you want to save it
 
 # Decoder State Variables
 frame_buffer = []  # Temporarily holds the bytes for a single frame.
